@@ -182,7 +182,7 @@
               "from": {
                 "kind": "ImageStreamTag",
                 "namespace": "openshift",
-                "name": "mongodb:3.6"
+                "name": "mongodb-36-centos7"
               }
             }
           },
