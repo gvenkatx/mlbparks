@@ -110,7 +110,7 @@
       "metadata": {
         "name": "mlbparks",
         "labels": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "config"
         }
@@ -129,7 +129,7 @@
       "metadata": {
         "name": "${MONGODB_APPLICATION_NAME}",
         "labels": {
-         "app": "workshop",
+         "app": "parks-app",
          "component": "mlbparks",
          "role": "database"
         }
@@ -156,10 +156,10 @@
       "metadata": {
         "name": "${MONGODB_APPLICATION_NAME}",
         "labels": {
-         "app": "workshop",
+         "app": "parks-app",
          "component": "mlbparks",
          "role": "database",
-         "app.kubernetes.io/part-of": "workshop",
+         "app.kubernetes.io/part-of": "parks-app",
          "app.kubernetes.io/name": "mongodb"
         }
       },
@@ -193,7 +193,7 @@
         "replicas": 1,
         "test": false,
         "selector": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "database",
           "deploymentConfig": "${MONGODB_APPLICATION_NAME}"
@@ -201,7 +201,7 @@
         "template": {
           "metadata": {
             "labels": {
-              "app": "workshop",
+              "app": "parks-app",
               "component": "mlbparks",
               "role": "database",
               "deploymentConfig": "${MONGODB_APPLICATION_NAME}"
@@ -323,7 +323,7 @@
       "metadata": {
         "name": "${APPLICATION_NAME}",
         "labels": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "backend"
          }
@@ -342,7 +342,7 @@
       "metadata": {
         "name": "${APPLICATION_NAME}",
         "labels": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "backend"
          }
@@ -417,10 +417,10 @@
           "app.openshift.io/vcs-ref": "master"
         },
         "labels": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "backend",
-          "app.kubernetes.io/part-of": "workshop",
+          "app.kubernetes.io/part-of": "parks-app",
           "app.kubernetes.io/name" : "eap"
          }
       },
@@ -464,7 +464,7 @@
         "replicas": 1,
         "test": false,
         "selector": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "database",
           "deploymentConfig": "${APPLICATION_NAME}"
@@ -472,7 +472,7 @@
         "template": {
           "metadata": {
             "labels": {
-              "app": "workshop",
+              "app": "parks-app",
               "component": "mlbparks",
               "role": "database",
               "deploymentConfig": "${APPLICATION_NAME}"
@@ -605,7 +605,7 @@
       "metadata": {
         "name": "${APPLICATION_NAME}",
         "labels": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "backend",
           "type": "parksmap-backend"
@@ -642,7 +642,7 @@
       "metadata": {
         "name": "${APPLICATION_NAME}",
         "labels": {
-          "app": "workshop",
+          "app": "parks-app",
           "component": "mlbparks",
           "role": "backend"
         }
